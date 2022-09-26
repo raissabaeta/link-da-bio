@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+:root {
+    --background: #2e2d2d;
+    --yellow-500: #dcb854;
+    --white: #ffffff;
+    --gray-300: #888585;
+    --black:#000000;
+  }
+
+* {
+    border:0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;      
+}
+
+body{
+    align-items: center;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+
+.my-links{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    position: relative;
+}
+h1, h2{
+    font-family: 'Roboto', sans-serif;
+    color: var(--yellow-500);
+    margin-top: 0;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--yellow-500)
+}
+
+.my-extra-links{
+    padding: 24px 16px;
+}
+
+.my-extra-links li{
+    border: 1px solid var(--gray-300);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-align: center;
+    transition: background-color .6s;
+}
+.my-extra-links li:hover{
+    background-color: var(--gray-300);
+}
+.my-extra-links li:hover a{
+    color: var(--background);
+}
+
+.icone{
+    font-size: 30px;
+}
+
+.social-network-links{
+    display: flex;
+    gap:16px;
+    margin: 16px;
+}
+
+.icone:hover{
+    fill: var(--gray-300);
+    transition: fill .6s;
+}
+
+canvas{
+    position: absolute;
+    z-index: -100;
+}
